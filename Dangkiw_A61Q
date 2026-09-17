@@ -1,0 +1,66 @@
+#Payment_Method
+
+valid_payment = ["cash", "gcash", "card"]
+
+payment = str(input("Please select a payment method (Cash, GCash, Card): ")).strip().lower()
+
+if payment in valid_payment:
+    print("Valid payment method")
+
+else:
+    print("Invalid payment method")
+#--------------------------------------------------------------------------------------------
+
+#Grade_Checker
+
+grade = int(input("Enter your grade: "))
+
+if grade <=0 and grade <=100:
+    print("Valid Grade")
+
+else:
+    print("Invalid Grade")
+#--------------------------------------------------------------------------------------------
+
+#Student_ID_Checker
+
+import re
+
+student_id = input("Enter Student ID: ")
+
+pattern = r"\d{4}-\d{4}"
+
+match = re.match(pattern, student_id)
+if match:
+    print("Valid Student ID")
+
+else:
+    print("Invalid Student ID")
+#--------------------------------------------------------------------------------------------
+
+#PIN_Validator
+
+pin = input("Create a 6-digit PIN: ")
+
+if len(pin) == 6 and pin.isdigit():
+    print("Valid PIN")
+
+else:
+    print("Invalid PIN. Enter exactly 6 digits")
+#--------------------------------------------------------------------------------------------
+
+#Student_Score_Entry
+
+grade = int(input("Enter your Grade: "))
+
+if grade != int:
+    print("Invalid input. Please enter a number.")
+
+elif grade <= 0 and grade <= 100:
+    print("Invalid input. Please enter a number between 0 and 100.")
+
+elif grade != int and grade <0 or grade > 100:
+    print("Invalid input. Please enter a number and is between 0 and 100.")
+
+else:
+    print("Valid score")
