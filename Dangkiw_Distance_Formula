@@ -1,0 +1,12 @@
+import math
+
+x1 = int(input("Enter the value for x1: "))
+y1 = int(input("Enter the value for y1: "))
+x2 = int(input("Enter the value for x2: "))
+y2 = int(input("Enter the value for y2: "))
+result = (pow (x2 - x1, 2)) + (pow (y2 - y1, 2))
+distance = math.sqrt(result)
+print(f"The distance is {distance:.2f}")
+
+#The math library helped me simplify my program by showing me functions like sqrt() and pow() were easier to use. For example in this code, (pow (x2 - x1, 2)) is easier than (x2 - x1) * (x2 - x1) or instead of using sqrt(),I raise the power to 0.5.
+#Some alternatives (such as the examples given earlier) are longer to type or more complex which would make it more difficult to code my program without sqrt() or pow().
